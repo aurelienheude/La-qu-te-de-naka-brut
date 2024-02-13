@@ -1,0 +1,10 @@
+{
+  "name": "la-quete-de-naka",
+  "version": "1.0.0",
+  "description": "jeu tour par tour",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss assets/css/style.css"
+  },
+  "author": "Aurélien Heude <aurelienheudepro@gmail.com> (https://github.com/aurelienheude)",
+  "license": "MIT"
+}

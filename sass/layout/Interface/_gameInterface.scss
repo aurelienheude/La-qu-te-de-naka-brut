@@ -1,0 +1,40 @@
+@use "../../utils" as *;
+
+.gameInterface{
+  position: relative;
+
+  flex-grow: 1;
+  height: 100%;
+  background-image: url("../../assets/img/fondStage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  box-shadow: inset 0px 60px 100px 60px rgba(black, 0.9);
+
+  img {
+    width: 300px;
+    height: auto;
+    background: transparent;
+    position: absolute;
+
+    &:nth-child(1){
+      bottom: 0px;
+      left: 0px;
+
+      transform: rotateY(180deg);
+
+      filter: drop-shadow(0 -2mm 4mm rgb(0, 0, 0));
+    }
+
+    &:nth-child(2){
+      width: 200px; 
+      right: 28px;
+      top: 65%;
+      animation: moveY 1s linear infinite;
+
+      filter: drop-shadow(0 -2mm 4mm rgb(0, 0, 0));
+    }
+  }
+
+  
+}

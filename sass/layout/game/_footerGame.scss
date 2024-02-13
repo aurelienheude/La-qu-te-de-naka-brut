@@ -1,0 +1,37 @@
+.footerGame{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 600px;
+
+  background: var(--degrad, linear-gradient(89deg, #000 0%, #012530 100%));
+  
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 18px;
+
+    width: 100%;
+    padding: 24px 18px;
+
+    li{
+      list-style: none;
+
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      height: 64px;
+      width: 64px;
+
+      border: 3px solid white;
+      border-radius: 11px;
+
+    }
+  }
+
+}

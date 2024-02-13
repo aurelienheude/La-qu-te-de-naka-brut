@@ -1,0 +1,13 @@
+@use "../../utils" as *;
+
+.headerGame{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 564px;
+  padding: 18px;
+
+  background: var(--degrad, linear-gradient(89deg, #000 0%, #012530 100%));
+
+}

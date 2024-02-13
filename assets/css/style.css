@@ -1,0 +1,110 @@
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
+@keyframes moveY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+h2 {
+  padding: 20px 0px;
+  color: #353535;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mona-Sans", sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body, html {
+  height: 100%;
+  background: #111;
+}
+
+.footerGame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  background: var(--degrad, linear-gradient(89deg, #000 0%, #012530 100%));
+}
+.footerGame ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 18px;
+  width: 100%;
+  padding: 24px 18px;
+}
+.footerGame ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  border: 3px solid white;
+  border-radius: 11px;
+}
+
+.headerGame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 564px;
+  padding: 18px;
+  background: var(--degrad, linear-gradient(89deg, #000 0%, #012530 100%));
+}
+
+.gameInterface {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+  background-image: url("../../assets/img/fondStage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 60px 100px 60px rgba(0, 0, 0, 0.9);
+}
+.gameInterface img {
+  width: 300px;
+  height: auto;
+  background: transparent;
+  position: absolute;
+}
+.gameInterface img:nth-child(1) {
+  bottom: 0px;
+  left: 0px;
+  transform: rotateY(180deg);
+  filter: drop-shadow(0 -2mm 4mm rgb(0, 0, 0));
+}
+.gameInterface img:nth-child(2) {
+  width: 200px;
+  right: 28px;
+  top: 65%;
+  animation: moveY 1s linear infinite;
+  filter: drop-shadow(0 -2mm 4mm rgb(0, 0, 0));
+}
+
+.heroInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  background: grey;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
